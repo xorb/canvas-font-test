@@ -6,7 +6,37 @@ export const editorFonts = [
   {
     name: "LibreFranklin",
     url: "https://d3q7mfli5umxdg.cloudfront.net/LibreFranklin[wght].ttf",
-    options: { style: "normal", weight: 300 },
+    options: { weight: 100 },
+  },
+  {
+    name: "LibreFranklin",
+    url: "https://d3q7mfli5umxdg.cloudfront.net/LibreFranklin[wght].ttf",
+    options: { weight: 200 },
+  },
+  {
+    name: "LibreFranklin",
+    url: "https://d3q7mfli5umxdg.cloudfront.net/LibreFranklin[wght].ttf",
+    options: { weight: 300 },
+  },
+  {
+    name: "LibreFranklin",
+    url: "https://d3q7mfli5umxdg.cloudfront.net/LibreFranklin[wght].ttf",
+    options: { style: "normal", weight: 400 },
+  },
+  {
+    name: "LibreFranklin",
+    url: "https://d3q7mfli5umxdg.cloudfront.net/LibreFranklin[wght].ttf",
+    options: { style: "normal", weight: 500 },
+  },
+  {
+    name: "LibreFranklin",
+    url: "https://d3q7mfli5umxdg.cloudfront.net/LibreFranklin[wght].ttf",
+    options: { style: "normal", weight: 600 },
+  },
+  {
+    name: "LibreFranklin",
+    url: "https://d3q7mfli5umxdg.cloudfront.net/LibreFranklin[wght].ttf",
+    options: { style: "normal", weight: 700 },
   },
 ];
 
@@ -108,6 +138,7 @@ function App() {
     });
     Promise.all(promisesList)
       .then((res) => {
+        console.log({ res });
         res.forEach((uniqueFont) => {
           if (uniqueFont && uniqueFont.family) {
             console.log(uniqueFont);
